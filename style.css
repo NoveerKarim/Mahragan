@@ -1,0 +1,253 @@
+body {
+  margin: 0;
+  direction: rtl;
+  font-family: "Playpen Sans Arabic", sans-serif;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1d4276;
+  direction: rtl;
+}
+.Logo img {
+  width: 19%;
+  height: auto;
+}
+.Sections {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  margin: 0 100px 0 50px;
+}
+.Sections img {
+  width: 100px;
+  height: auto;
+}
+.Sections:hover {
+  background-color: #4a6891;
+  border: 100px;
+  border-radius: 10px;
+}
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: wheat;
+}
+.image-left img {
+  margin: 25px 0px 25px 120px;
+  width: 400px;
+  height: auto;
+}
+.text-right {
+  margin-right: 20px;
+  width: 550px;
+}
+.section-reverse {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  direction: ltr;
+}
+.image-right img {
+  margin: 25px 120px 25px 0px;
+  width: 400px;
+  height: auto;
+}
+.text-left {
+  margin-left: 20px;
+  width: 550px;
+}
+.text-left h2 {
+  direction: rtl;
+}
+.information {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.information-1,
+.information-2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 580px;
+  height: 240px;
+  border-radius: 30px;
+  background-color: wheat;
+  padding: 15px;
+}
+.footer {
+  height: 20vh; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  color: white;
+  text-align: center;
+  background: #1d4276;
+}
+.question-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  direction: rtl;
+  font-family: 'Cairo', sans-serif;
+}
+
+.options li {
+  list-style: none;
+  margin: 8px 0;
+}
+.question-box {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 25px;
+  max-width: auto;
+  margin: auto;
+  margin-bottom: 40px;
+  margin-top: 40px  ;
+}
+
+.question-box h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #333;
+}
+
+.option {
+  margin-bottom: 10px;
+}
+
+.option input[type="radio"] {
+  display: none;
+}
+
+.option label {
+  display: block;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #eee;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border: 1px solid transparent;
+}
+
+
+.option input[type="radio"]:checked + label.correct {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  font-weight: bold;
+}
+
+
+.option input[type="radio"]:checked + label.wrong {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  font-weight: bold;
+}
+.Logo-Image img{
+  width: 450px;
+  height: auto;
+  padding-top: 20px;
+  text-align: center;
+}
+.homepage-banner {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: wheat;
+  
+  
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.homepage-banner h2 , .homepage-banner h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #1d4276;
+}
+
+.homepage-banner p {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.homepage-banner .buttons a {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 24px;
+  background-color: #1d4276;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.homepage-banner .buttons a:hover {
+  background-color: #4a6891;
+}
+
+
+.quiz-container {
+  max-width: 700px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.quiz-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.question-box {
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: #f0f8ff;
+  border-radius: 10px;
+}
+
+.question-box p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  display: block;
+  background: #eee;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #f8d7da; /* خطأ */
+  border: 2px solid #dc3545;
+  color: #721c24;
+}
+
+input[type="radio"]:checked + label.correct {
+  background-color: #d4edda; /* صح */
+  border: 2px solid #28a745;
+  color: #155724;
+}
+
